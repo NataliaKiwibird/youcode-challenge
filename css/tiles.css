@@ -1,0 +1,39 @@
+.tiles {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.tiles__item {
+    z-index: 1;
+    margin: 1vw;
+    margin-top: -5vh;
+    width: 25vw;
+    background-color: rgb(31,43,48);
+    font-family: 'Roboto', sans-serif;
+}
+.tiles__item:first-of-type {
+    background-color: rgb(255,60,80);
+}
+.tiles__item-image {
+    width: 60px;
+    margin: 65px 50px 15px 50px;
+}
+.tiles__item-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 25px 50px 0 50px;
+}
+hr {
+    height: 2px;
+    width: 4vw;
+    background-color: white;
+    margin: 0 auto 0 50px;
+}
+.tiles__item-text {
+    padding: 10px 50px 50px 50px;
+    line-height: 1.5;
+    text-align: justify;
+}

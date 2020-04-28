@@ -31,11 +31,9 @@
     font-family: 'Source Sans Pro', sans-serif;
     width: 50vw;
     text-transform: capitalize;
-    line-height: 1.5;
 }
 .home__text {
     width: 40vw;
-    line-height: 1.5;
 }
 .home__buttons {
     margin: 4vh auto
@@ -73,6 +71,7 @@
     .home__title {
         width: 90vw;
         margin-top: 5px;
+        line-height: 1.5;
     }
     .home__text {
         width: 90vw;
