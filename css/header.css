@@ -1,0 +1,29 @@
+.header {
+    height: 12vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.header-nav__list {
+    display: flex;
+    justify-content: center;
+}
+.header-nav__item {
+    list-style: none;
+}
+.header-nav__item-link {
+    color: white;
+    font-size: 15px;
+    padding: 5px 0px;
+    margin: 15px;
+    text-decoration: none;
+}
+.header-nav__item-link:hover {
+    border-bottom: 1.5px solid white;
+}
