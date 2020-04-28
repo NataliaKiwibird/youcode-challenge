@@ -27,3 +27,22 @@
 .header-nav__item-link:hover {
     border-bottom: 1.5px solid white;
 }
+.header__mobile-menu {
+    display: none;
+}
+@media (max-width: 430px) {
+    .header {
+        height: 25vh;
+        background-color: rgb(55,55,55);
+        flex-direction: column;
+        position: unset;
+    }
+    .header-nav__list {
+        display: none;
+    }
+    .header__mobile-menu {
+        display: unset;
+        width: 22px;
+        margin-left: 75vw;
+    }
+}
