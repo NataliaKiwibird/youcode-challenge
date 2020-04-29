@@ -1,0 +1,27 @@
+.services {
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+}
+.services__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.services__main-item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services__main-image {
+    width: 40px;
+}
