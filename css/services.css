@@ -1,7 +1,9 @@
 .services {
-    width: 80vw;
+    width: 70vw;
     height: 100%;
-    margin: 0 auto;
+    margin: 100px auto;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10vh;
 }
 .services__top {
     display: flex;
@@ -9,19 +11,88 @@
     align-items: center;
     justify-content: center;
 }
+.services__top h6 {
+    color: rgb(255,60,80);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.services__top h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 56px;
+    margin: 15px auto;
+    text-align: center;
+}
+.services__top-span {
+    color: rgb(255,60,80);
+    text-transform: capitalize;
+}
+.services__top p {
+    color: #aaa;
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: center;
+    width: 40vw;
+}
 .services__main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 50px auto;
 }
 .services__main-item {
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 7vh 1vw 0 1vw;
 }
 .services__main-image {
-    width: 40px;
+    width: 52px;
+}
+.services__main-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    margin: 25px auto 15px auto;
+}
+.services__main-text {
+    color: #aaa;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 15px;
+}
+@media (max-width: 1025px) {
+    .services {
+        width: 90vw;
+    }
+    .services__top p {
+        width: 70vw;
+    }
+    .services__main-item {
+        margin: 3vh 1vw 0 1vw;  
+    }
+}
+@media (max-width: 769px) {
+    .services {
+        width: 95vw;
+        margin: 60px auto;
+        padding-bottom: 10px;
+    }
+    .services__top h3 {
+        font-size: 42px;
+    }
+    .services__top p {
+        width: 90vw;
+    }
+    .services__main-item {
+        width: 100%;
+        margin: 6vh 1vw 0 1vw;  
+    }
+    .services__main-text {
+        margin: 20px auto;
+        width: 280px;
+    }
 }
