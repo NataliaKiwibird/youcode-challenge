@@ -140,23 +140,25 @@
                 <p class="contact__description-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos labore sapiente aperiam? Dignissimos architecto, soluta cumque delectus ut aut culpa sunt dicta eligendi quam nobis! Unde nesciunt esse mollitia similique.
                     <br>
+                    <br>
                     Aliquid deleniti, nemo quia beatae dignissimos ea! Enim autem eaque, rem sunt velit aspernatur ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos labore sapiente aperiam?
                 </p>
             </div>
 
             <form class="contact__form">
 
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="text" name="company-name" placeholder="Company Name Name" required>
-                <input type="email" name="email" placeholder="Email address" required>
+                <input class="contact__form-item one" type="text" name="name" placeholder="Your Name*" required>
+                <input class="contact__form-item two" type="text" name="company-name" placeholder="Company Name*" required>
+                <input class="contact__form-item three" type="email" name="email" placeholder="Email address*" required>
 
-                <select placeholder="Select service" required>
+                <select class="contact__form-item four" placeholder="Select service*" required>
                     <option selected>Web Design</option>
                     <option>Advice</option>
                     <option>Other</option>
                 </select>
                 
-                <textarea placeholder="Describe your project" rows="10" cols="65"></textarea>
+                <textarea class="contact__form-item five" placeholder="Describe your project*" rows="8" cols="65"></textarea>
+                <button class="contact__form-item six">Submit</button> 
             </form>
 
         </section>

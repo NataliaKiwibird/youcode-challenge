@@ -1,24 +1,115 @@
 .contact {
     width: 80vw;
     height: 100%;
+    margin: 50px auto 100px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 .contact__description {
     width: 30vw;
     text-align: right;
+    margin: 10px 3vw;
 }
 .contact__description-title {
-
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 54px;
 }
 .contact__description-text {
-
+    font-family: 'Roboto', sans-serif;
+    color: #aaa;
+    line-height: 1.5;
+    font-size: 15px;
 }
 .contact__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 15vw);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 15px;
+    margin-left: 3vw;
+    padding-top: 4vh;
+}
+.one {
+    grid-area: 1/1/2/3;
+}
+.four {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.five {
+    grid-column: 1/3;
+    grid-row: 4/6;
+    border-color: #ccc;
+}
+.six {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    margin-top: 10px;
+    background-color: rgb(255,60,80);
+    border: none;
+}
+.contact__form button {
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+}
+.contact__form-item {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1025px) {
+    .contact {
+        width: 90vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .contact__description {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .contact__description-title {
+        font-size: 36px;
+        text-align: center;
+    }
+    .contact__description-text {
+        text-align: center;
+    }
+    .contact__form {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        grid-template-columns: repeat(2, 40vw);
+        margin: 0 auto
+    }
+}
+@media (max-width: 769px) {
+    .two {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .three {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .four {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    .five {
+        grid-column: 1/3;
+        grid-row: 5/7;
+    }
+    .six {
+        grid-column: 1/3;
+        grid-row: 7/8;
+        margin-top: 10px;
+    }
 }
