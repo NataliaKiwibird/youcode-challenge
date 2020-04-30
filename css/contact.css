@@ -1,0 +1,24 @@
+.contact {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.contact__description {
+    width: 30vw;
+    text-align: right;
+}
+.contact__description-title {
+
+}
+.contact__description-text {
+
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
